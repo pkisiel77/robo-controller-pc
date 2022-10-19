@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>saul.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="hqdefault.png" />
+    <None Remove="SF Fedora.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="hqdefault.png" />
+    <Content Include="saul.ico" />
+    <Content Include="SF Fedora.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>..\..\XInputDotNet\BinariesX64\Release\XInputDotNetPure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
